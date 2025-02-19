@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Nilai Siswa Coding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>menghitung rata² nilai raport per-semester</h1>
+        
+        <form id="form-siswa">
+            <input type="text" id="nama" placeholder="Nama Siswa" required>
+            <h3>Masukkan 7 Nilai:</h3>
+            <input type="number" class="nilai" placeholder="Nilai 1" required min="0" max="100">
+            <input type="number" class="nilai" placeholder="Nilai 2" required min="0" max="100">
+            <input type="number" class="nilai" placeholder="Nilai 3" required min="0" max="100">
+            <input type="number" class="nilai" placeholder="Nilai 4" required min="0" max="100">
+            <input type="number" class="nilai" placeholder="Nilai 5" required min="0" max="100">
+            <input type="number" class="nilai" placeholder="Nilai 6" required min="0" max="100">
+            <input type="number" class="nilai" placeholder="Nilai 7" required min="0" max="100">
+            <input type="text" id= jika nilai rata² mu dibawah 84 maka kemungkinan masuk smkn 1 ngasem lewat jalur nilai lebih kecil ></text>
+            <button type="submit">Tambah Siswa</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Siswa</th>
+                    <th>Nilai 1</th>
+                    <th>Nilai 2</th>
+                    <th>Nilai 3</th>
+                    <th>Nilai 4</th>
+                    <th>Nilai 5</th>
+                    <th>Nilai 6</th>
+                    <th>Nilai 7</th>
+                    <th>Rata-rata</th>
+                </tr>
+            </thead>
+            <tbody id="data-siswa">
+                <!-- Data siswa akan ditambahkan di sini oleh JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
